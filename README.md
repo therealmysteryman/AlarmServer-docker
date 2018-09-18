@@ -5,4 +5,4 @@ Listen to default port 4025
 
 ## Docker Variable
 - EVL_IP for Envisalink IP
-- PASSWORD Envisalink Password
+- PASSWORD for Envisalink Password
