@@ -6,7 +6,7 @@ WORKDIR /var/
 
 RUN apk update && \
     apk upgrade && \
-    apk add git
+    apk add git bash sed
 RUN git clone https://github.com/juggie/AlarmServer.git
 
 RUN pip install tornado
