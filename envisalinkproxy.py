@@ -18,8 +18,8 @@ class Proxy(object):
             proxy.listen(config.ENVISALINKPROXYPORT)
 
 class ProxyServer(TCPServer):
-    def __init__(self, ssl_options=None, **kwargs):
-        TCPServer.__init__(self, io_loop=io_loop, ssl_options=ssl_options, **kwargs)
+    def __init__(self, io_loop=io_loop,ssl_options=None, **kwargs):
+        TCPServer.__init__(self,ssl_options=ssl_options, **kwargs)
         self.connections = {}
         events.register('proxy', self.proxy_event)
 
