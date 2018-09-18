@@ -16,4 +16,4 @@ COPY run.sh /var/
 
 RUN chmod +x /var/run.sh
 
-CMD /var/run.sh
+CMD /var/run.sh && /bin/bash
