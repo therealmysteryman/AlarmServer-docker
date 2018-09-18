@@ -11,6 +11,7 @@ RUN git clone https://github.com/juggie/AlarmServer.git
 
 RUN pip install tornado
 
+COPY envisalinkproxy.py /var/AlarmServer/core/
 COPY alarmserver.cfg /var/AlarmServer/
 COPY run.sh /var/
 
