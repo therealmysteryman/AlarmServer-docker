@@ -12,4 +12,4 @@ RUN git clone https://github.com/juggie/AlarmServer.git
 RUN pip install tornado
 
 COPY run.sh /var/
-CMD run.sh
+CMD /var/run.sh
