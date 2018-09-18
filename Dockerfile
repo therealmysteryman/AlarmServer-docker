@@ -11,4 +11,4 @@ RUN git clone https://github.com/juggie/AlarmServer.git
 
 RUN pip install tornado
 
-EXEC /usr/bin/python alarmserver.py -c alarmserver.cfg
+CMD /usr/bin/python alarmserver.py -c alarmserver.cfg
